@@ -4,7 +4,7 @@ var TelogicalUi = angular.module('TelUI');
 var _ = require('lodash');
 
 TelogicalUi
-  .directive('teluiButton', [
+  .directive('teluiLabel', [
 
       function reactLabelDirective() {
         'use strict';
