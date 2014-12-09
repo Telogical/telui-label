@@ -2,6 +2,7 @@
   "name": "TelUI-Label",
   "version": "0.0.1",
   "private": true,
+  "main": "index.js",
   "dependencies": {
     "TelUI-Core": "git+ssh://git@github.com:Telogical/TelUI-Core.git",
     "partialify": "*",
