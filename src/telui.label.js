@@ -1,7 +1,7 @@
 var React = require('react/addons');
 require('TelUI-Core');
 var TelogicalUi = angular.module('TelUI');
-var _ = require('lodash');
+var UI = require('../react/telui');
 
 TelogicalUi
   .directive('teluiLabel', [
@@ -25,8 +25,23 @@ TelogicalUi
             state: '@'
           },
           template: '<div class="waffles"></div>',
-          link: function link($scope, $el, attrs) {
+          link: function link($scope, $el) {
             console.log('linking TelUI label');
+
+            var labelModel = {
+              id: $scope.id,
+              label: $scope.label,
+              value: $scope.value,
+              state: $scope.state,
+              disabled: $scope.disabled,
+              appearance: $scope.appearance,
+              iconPrimary: $scope.iconPrimary,
+              iconSecondary: $scope.iconSecondary,
+              cssClass: $scope.cssClass,
+              text: $scope.text
+            };
+
+            React.renderComponent(UI.Label(labelModel), $el[0]);
           }
         };
   }]);
