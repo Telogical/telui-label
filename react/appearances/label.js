@@ -21,9 +21,9 @@ function AppearanceLabel(ui) {
    
       var id = this.props.id,
         key = this.props.key || this.props.id,
-        value = this.props.value;
+        label = this.props.label;
 
-        console.log('attrs', id, key, value);
+        console.log('attrs', id, key, label);
         /*
         cssClass = this.props.cssClass,
         name = this.props.name,
@@ -31,22 +31,18 @@ function AppearanceLabel(ui) {
         iconPrimary = this.props.iconPrimary,
         iconSecondary = this.props.iconSecondary,
         active = (this.props.active || this.state.active),
-        uiState = this.props.uiState;
-
-
-      var labelLiAttrs = {
-        'ui-widget': true
+        state = this.props.uiState;
+         */ 
+    
+      var spanClasses = {
+        'ui-state-default': true
       };
 
-      var appearanceModel = {
-
+      var spanAttrs = {
+        className: cx(spanClasses)
       };
-
-      var appearance = ui.Appearances[this.props.appearance](appearanceModel);
-      var li = domx.li(labelLiAttrs, appearance);
-     */ 
    
-      return domx.div({ id: 'iamaspecialboy', }, 'herrrrooooooo');
+      return domx.span(spanAttrs, this.props.label);
     }
   });
 }
