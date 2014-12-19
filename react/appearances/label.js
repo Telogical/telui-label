@@ -35,6 +35,7 @@ function AppearanceLabel(ui) {
          */ 
     
       var spanClasses = {
+        'ui-text-label': true,
         'ui-state-default': true
       };
 
