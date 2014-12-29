@@ -21,6 +21,7 @@ function AppearanceLabel(ui) {
    
       var id = this.props.id,
         key = this.props.key || this.props.id,
+        cssClass = this.props.cssClass,
         label = this.props.label;
 
         console.log('attrs', id, key, label);
@@ -38,6 +39,10 @@ function AppearanceLabel(ui) {
         'ui-text-label': true,
         'ui-state-default': true
       };
+
+      if(cssClass) {
+        spanClasses[cssClass] = true;
+      }
 
       var spanAttrs = {
         className: cx(spanClasses)
