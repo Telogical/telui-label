@@ -1,7 +1,6 @@
 {
   "name": "@telogical/telui-label",
   "version": "1.0.0",
-  "private": true,
   "main": "index.js",
   "dependencies": {
     "@telogical/telui-core": "1.0.x",
