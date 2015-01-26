@@ -1,12 +1,12 @@
 {
-  "name": "TelUI-Label",
-  "version": "0.0.3",
+  "name": "@telogical/telui-label",
+  "version": "1.0.0",
   "private": true,
   "main": "index.js",
   "dependencies": {
-    "TelUI-Core": "git+ssh://git@github.com:Telogical/TelUI-Core.git#develop-1.1",
+    "@telogical/telui-core": "1.0.x",
     "partialify": "*",
-    "react": "0.11.x" 
+    "react": "0.11.x"
   },
   "devDependencies": {
     "lodash": "*",
