@@ -1,7 +1,5 @@
-var React = require('react/addons');
-require('@telogical/telui-core');
-var TelogicalUi = angular.module('TelUI');
-var UI = require('../react/telui');
+var TelogicalUi = angular.module('TelUI'),
+  UI = require('../react/telui');
 
 TelogicalUi
   .directive('teluiLabel', [
