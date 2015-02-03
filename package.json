@@ -1,0 +1,36 @@
+{
+  "name": "@telogical/telui-label",
+  "version": "1.0.0",
+  "description": "A label component built within the telui component system",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Telogical/telui-label.git"
+  },
+  "keywords": [
+    "telui",
+    "react",
+    "angular",
+    "label",
+    "Telogical"
+  ],
+  "author": "Jesse Harlin <jharlin@telogical.com>",
+  "contributors": [{
+    "name": "Jesse Harlin",
+    "email": "jharlin@telogical.com"
+  }, {
+    "name": "Joe Hare",
+    "email": "jhare@telogical.com"
+  }],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Telogical/telui-label/issues"
+  },
+  "homepage": "https://github.com/Telogical/telui-label",
+  "dependencies": {
+    "@telogical/telui-core": "1.x.x"
+  }
+}
