@@ -1,5 +1,3 @@
-var React = require('react/addons');
-
 function Label(ui) {
   'use strict';
 
@@ -36,8 +34,8 @@ function Label(ui) {
 
       var appearanceElement = ui.Appearances[appearance](this.props);
       var li = domx.li(labelLiAttrs, appearanceElement);
-   
-      return li; 
+
+      return li;
     }
   });
 }
