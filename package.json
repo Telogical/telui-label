@@ -30,7 +30,7 @@
     "url": "https://github.com/Telogical/telui-label/issues"
   },
   "homepage": "https://github.com/Telogical/telui-label",
-  "dependencies": {
+  "peerDependencies": {
     "@telogical/telui-core": "1.x.x"
   }
 }

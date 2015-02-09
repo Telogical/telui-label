@@ -1,7 +1,7 @@
-var TelogicalUi = angular.module('TelUI'),
-  UI = require('../react/telui');
+var UI = require('../react/telui');
 
-TelogicalUi
+angular
+  .module('TelUI')
   .directive('teluiLabel', [
       function reactLabelDirective() {
       'use strict';
@@ -23,8 +23,7 @@ TelogicalUi
         },
         template: '<div class="waffles"></div>',
         link: function link($scope, $el) {
-          console.log('linking TelUI label');
-
+          
           var labelModel = {
             id: $scope.id,
             label: $scope.label,
