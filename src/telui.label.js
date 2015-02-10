@@ -1,4 +1,5 @@
-var UI = require('../react/telui');
+var UI = require('../react/telui'),
+  React = UI.Core.React;
 
 angular
   .module('TelUI')
@@ -23,7 +24,7 @@ angular
         },
         template: '<div class="waffles"></div>',
         link: function link($scope, $el) {
-          
+
           var labelModel = {
             id: $scope.id,
             label: $scope.label,

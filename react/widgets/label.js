@@ -1,6 +1,9 @@
 function Label(ui) {
   'use strict';
 
+  var React = ui.Core.React,
+    _ = ui.Core._;
+
   return React.createClass({
     displayName: 'Label',
     mixins: [ui.Mixins.Widget],

@@ -1,7 +1,7 @@
-//global.UI = global.UI || require('@telogical/telui-core');
-require('@telogical/telui-core');
 
-global.UI.Label = require('./widgets/label.js')(global.UI);
-global.UI.Appearances.label = require('./appearances/label.js')(global.UI);
+var TelUI = require('@telogical/telui-core');
 
-module.exports = global.UI;
+TelUI.Label = require('./widgets/label.js')(TelUI);
+TelUI.Appearances.label = require('./appearances/label.js')(TelUI);
+
+module.exports = TelUI;
