@@ -1,0 +1,28 @@
+label(){
+
+  
+}
+
+
+
+labelDefault(ui-state,tolerance, ui-statename, i-statename){
+  down = darken(desaturate(ui-state, (tolerance * 0.3)), (tolerance* 0.7));
+  
+  if(ui-statename =='default'){
+    down = darken(ui-state, tolerance* 2);
+  }
+  
+  label();
+  color: down;
+}
+
+
+labelDisabled(ui-state,tolerance, ui-statename, i-statename)
+  labelDefault(ui-state,tolerance, ui-statename, i-statename);
+  opacity:0.5;
+
+
+iLabel = {
+  'default': labelDefault,
+  'disabled': labelDisabled  
+}
